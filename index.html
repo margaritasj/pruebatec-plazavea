@@ -28,7 +28,6 @@
   <section class="bg-section p-3">
     <div class="container">
       <!-- Group cards -->
-
       <div class="row">
         <div class="col-12 col-sm-6 d-flex justify-content-around">
           <div class="card" style="width: 30rem;">
@@ -49,7 +48,7 @@
               </ol>
             </div>
             <div class="card-footer text-center">
-              <button type="button" class="btn bg-red text-white">Ver solución</button>
+              <button type="button" class="btn bg-red text-white" data-toggle="modal" data-target="#modal-exerciseOne">Ver solución</button>
             </div>
           </div>
         </div>
@@ -69,12 +68,41 @@
       </div>
     </div>
   </section>
+  <!-- Footer -->
   <footer class="border-footer footer text-center text-white p-2 w-100">
     <p class="m-0"> © 2018
       <span class="">Dev - </span>
       <strong> Margarita Sutta Juarez</strong>
     </p>
   </footer>
+  <!-- Modal Exercise One-->
+  <div class="modal fade" id="modal-exerciseOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Solución</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol class="p-left">
+            <li>El mayor número impar del arreglo es: <span> </span>.
+            </li>
+            <li>El menor número del arreglo es: <span> </span>. 
+            </li>
+            <li>El segundo mayor número del arreglo es: :<span> </span>.
+            </li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-red text-white" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Referencia al archivo javascript de Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
