@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prueba técnica - Plaza Vea</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Titan+One" rel="stylesheet">
   <!-- Referencia al archivo de la hoja de estilos de Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
@@ -15,16 +16,65 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark fixed">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-red fixed">
     <!-- Navbar content -->
-    <a class="navbar-brand" href="#">
-      <img src="src/assets/images/logo.png" width="220" height="70" alt="logo">
+    <a class="" href="#">
+      <img src="src/assets/images/logo.png" width="120" height="53" alt="logo">
     </a>
-    <h5 class="float-sm-left text-white">Margarita Sutta Juarez - Frontend Developer</h5>
+    <h3 class="text-center text-white">PRUEBA TÉCNICA</h3>
   </nav>
-  <section class="bg-section container-fluid">
-hola
+  <!-- Section -->
+  <section class="bg-section p-3">
+    <div class="container">
+      <!-- Group cards -->
+
+      <div class="row">
+        <div class="col-6 d-flex justify-content-around">
+          <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src="src/assets/images/arrays.jpg" width="80" height="200" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text text-center">Dado el siguiente arreglo de números enteros</p>
+              <p class="text-center">
+                <span class="box-array text-white"> [13, 42, 565, 1, 26, 75] </span>
+              </p>
+              <hr>
+              <ol class="p-left">
+                <li>Obtener el mayor número impar del arreglo.
+                </li>
+                <li>Obtener el menor número del arreglo.
+                </li>
+                <li>Obtener el segundo mayor número del arreglo.
+                </li>
+              </ol>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn bg-red text-white">Ver solución</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-around">
+          <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src="src/assets/images/giphy.gif" width="80" height="250" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font-sw tc-yellow">star wars</h5>
+              <p class="card-text text-justify">Usando la librería Javascript de tu preferencia, realiza una petición Ajax a la siguiente URL
+                <a href="https://swapi.co/api/people/">swapi</a>, los datos que devuelve dicha API son los nombres de los personajes de Star Wars.</p>
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn bg-red text-white">Ver solución</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  <footer class="border-footer footer text-center text-white p-2 w-100">
+    <p class="m-0"> © 2018
+      <span class="">Dev - </span>
+      <strong> Margarita Sutta Juarez</strong>
+    </p>
+  </footer>
   <!-- Referencia al archivo javascript de Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -1,9 +1,59 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-.bg-section {
-  background-color: rgb(255, 255, 103);
+@font-face {
+  font-family: jedi-outline;
+  src: url(../assets/fonts/Starjhol.ttf);
 }
+
+footer {
+  background: black;
+  font-size: 0.5rem;
+}
+
+h3 {
+  font-family: "Titan One", cursive;
+}
+
+.bg-red {
+  background-color: #ff142d;
+}
+
+.btn {
+  text-align: center;
+  font-weight: 500;
+}
+
+.box-array {
+  background-color: #555555;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.font-sw {
+  font-family: jedi-outline;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.p-left {
+  padding-left: 2rem;
+}
+
+.tc-yellow {
+  color: #ffee58 !important;
+}
+
+.w-100 {
+  width: 100%!important;
+}
+
