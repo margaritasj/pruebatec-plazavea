@@ -1,12 +1,13 @@
 $(document).ready(function() {
-  const containerCards = document.getElementById("card-deck");
-  let planetCharacters = ""; // Declaramos variable en vacío.
+  var containerCards = document.getElementById("card-deck");
+  var img = document.getElementById('img'); // Declaramos variable.
+  var planetCharacters = ""; // Declaramos variable en vacío.
 
   AJAXrequest();
   function AJAXrequest() {
     // Creamos la función que hará la petición ajax.
-    let count = 0;
-    for (let i = 1; i < 88; i++) {
+    var count = 0;
+    for (var i = 1; i < 88; i++) {
       $.ajax({
         // La url a la que se le está haciendo la petición.
         url: `https://swapi.co/api/people/${i}/`,
@@ -16,9 +17,9 @@ $(document).ready(function() {
         // Si la petición es satisfactoria ejecutar lo siguiente.
         success: function(response) {
           var data = response;
-          const characters = ` <div class='card'>
+          var characters = ` <div class='card'>
               <div class='card-image'> 
-                <img src='https://starwars-visualguide.com/assets/img/characters/${i}.jpg' alt='${
+                <img id= "img" src='https://starwars-visualguide.com/assets/img/characters/${i}.jpg' alt='${
             data.name
           }'>
               </div>
