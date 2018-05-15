@@ -24,15 +24,30 @@ h3 {
   background-color: #ff142d;
 }
 
+.box-array {
+  background-color: #555555;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
 .btn {
   text-align: center;
   font-weight: 500;
 }
 
-.box-array {
-  background-color: #555555;
-  border-radius: 0.2rem;
-  padding: 0.5rem;
+.btn-min {
+ font-size: 12px;
+ padding: 2px;
+}
+
+.container-result{
+  border: 2px solid rgb(255, 174, 0);
+  color: rgb(255, 174, 0);
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: center;
 }
 
 .font-sw {

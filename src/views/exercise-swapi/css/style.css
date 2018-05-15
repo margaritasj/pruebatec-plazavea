@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro");
+
+@font-face {
+  font-family: jedi-outline;
+  src: url(../assets/fonts/Starjhol.ttf);
+}
+
+.card {
+	width: 400px;
+	margin: 0px auto;
+	background-color: white;
+	box-shadow: 0px 5px 20px #555;
+}
+
+.card a {
+	color: #333;
+	text-decoration: none;
+}
+
+.card:hover .card-image img {
+	width: 110%;
+	filter: grayscale(0);
+}
+
+.card-image {
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-image img {
+  filter: grayscale(1);
+  left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition-property: filter width;
+  transition-duration: .3s;
+  width: 100%;
+}
+
+.card-body {
+  box-sizing: border-box;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+
+.card-title,
+.card-exceprt {
+	font-family: 'Playfair Display', serif;
+}
+
+.card-date,
+.card-title {
+  font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.card-exceprt,
+#case-title {
+	color: #777;
+}
+
+#case-title {
+  font: 18px 'Microsoft YaHei';
+  display:block;
+	position: absolute;
+	margin:auto;
+	left:0px;
+	right:0px;
+	top:10px;
+	text-align:center;
+	text-decoration: none;
+}
+
+.d-flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.font-sw {
+  font-family: jedi-outline;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.m-10-20{
+  margin: 10px 20px;
+}
+
+.m-10{
+  margin: 20px 0;
+}
+
+.p-5{
+  padding: 5px;
+}
+
+.p-20{
+  padding: 20px;
+}
+
+.tc-yellow {
+  color: #ffee58 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100{
+  width: 100%;
+}
+
+
