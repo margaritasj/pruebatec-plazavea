@@ -1,7 +1,7 @@
+$(document).ready(function() {
+  const containerCards = document.getElementById("card-deck");
+  var homeworld = ''; 
 
-$(document).ready(function () {
-  const containerCards = document.getElementById('card-deck');
-  const modal = document.getElementById('body');
   //  Invocar fetch con la URL, de manera predeterminada, la API de extracción utiliza el método GET
   getFetch();
   function getFetch() {
@@ -9,18 +9,18 @@ $(document).ready(function () {
     for (let i = 1; i < 88; i++) {
       const url = `https://swapi.co/api/people/${i}/`;
       fetch(url)
-        .then((resp) => resp.json())
-        .then(function (data) {
+        .then(resp => resp.json())
+        .then(function(data) {
           console.log(data);
           if (i === 17) {
-            return i = 18;
-          };
-         
+            return (i = 18);
+          }
+
           const characters = ` <div class='card m-5'>
           <div class='card-image'> 
             <img id= "img" src='https://starwars-visualguide.com/assets/img/characters/${i}.jpg' alt='${
-        data.name
-      }'>
+            data.name
+          }'>
           </div>
           <div class='card-body'>
             <div class='card-title'>
@@ -34,15 +34,22 @@ $(document).ready(function () {
             </div>
           </div>
         </div>`;
-          ;
+        
+        
+          fetch(url)
+            .then(resp => resp.json())
+            .then(function(data) {
+              console.log(data.homeworld);
+              $(`.planet${i}`).html("<b>Planeta:</b>" + data.homeworld.name);
+            });
+            
+
           containerCards.innerHTML += characters;
           count++;
         })
-        .catch(function (error) {
+        .catch(function(error) {
           console.log(JSON.stringify(`Error ${error}`));
         });
     }
- };
-
-
+  }
 });

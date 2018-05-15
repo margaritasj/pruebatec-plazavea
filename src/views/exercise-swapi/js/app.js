@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var containerCards = document.getElementById("card-deck");
   var img = document.getElementById('img'); // Declaramos variable.
-  var planetCharacters = ""; // Declaramos variable en vacío.
+  var planetCharacters = ""; 
 
   AJAXrequest();
   function AJAXrequest() {
@@ -60,3 +60,5 @@ $(document).ready(function() {
     }
   }
 });
+
+
