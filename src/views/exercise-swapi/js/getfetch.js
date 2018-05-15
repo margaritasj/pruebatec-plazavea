@@ -16,8 +16,8 @@ $(document).ready(function () {
             return i = 18;
           };
          
-          const characters = ` <div class='card'>
-          <div class='card-image m-5'> 
+          const characters = ` <div class='card m-5'>
+          <div class='card-image'> 
             <img id= "img" src='https://starwars-visualguide.com/assets/img/characters/${i}.jpg' alt='${
         data.name
       }'>
